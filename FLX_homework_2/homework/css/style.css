@@ -1,0 +1,159 @@
+/* 
+
+write your code here
+
+*/
+@media print  {
+
+	.tm-team-description-container>.tm-section-title{
+		color: blue;
+		text-indent: 0;
+	}
+	h2 + p.tm-section-description{
+		font-style: italic;
+	}
+	.tm-sidebar{
+		display: none;
+	}
+	#about, section:not(:first-of-type){
+		display: none;
+	}
+	body{
+		background: white;
+		padding-top: 0;
+		width: 70%;
+		margin: auto;
+		line-height: 2em;
+		text-indent: 1.5em;
+	}
+	p.tm-section-description:first-letter, .tm-banner-text:first-letter, footer:first-letter{
+		font-size: 30px;
+		color: #87CEFA;
+	}
+	.padding-medium, .tm-banner{
+		padding: 0;
+	}
+	.tm-banner{
+		margin-top: 50px;
+	}
+	.flex-2-col{
+		display: flex;
+		align-items: center;
+		overflow: visible;
+	}
+	.flex-item img{
+		height: auto;
+		width: 220px;
+		padding-top: 15px;
+		padding-left: 20px;
+	}
+	.padding-medium {
+		width: 320px;
+	}
+	.tm-content-box:before{
+        visibility: hidden;
+    }
+    div.margin-b-10{
+		margin: 30px;
+		border: 3px solid transparent;
+	}
+}
+
+	.box-bg h2:hover{
+		background-color: #87CEFA;
+		color: white;
+		font-weight: bold;
+	}
+	p.tm-section-description:first-letter, .tm-banner-text:first-letter, footer:first-letter{
+		font-size: 30px;
+		color: #87CEFA;
+	}
+	.tm-content-box, .blocks, .tm-sidebar{
+		box-shadow: 0 0 10px 1px grey;
+	}
+	.margin-b-10{
+		border: 3px solid grey;
+	}
+
+	
+	div.carousel-content h2.tm-section-title {
+		color: #dcdcdc;
+		letter-spacing: 5px;
+    }
+    .flex-2-col{
+		display: flex;
+		align-items: center;
+	}
+
+	h2.tm-section-title{
+		text-indent: 0;
+	}
+	.tm-content-box {
+        position: relative;
+    }
+    .tm-content-box:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 25px solid skyblue;
+        border-right: 200px solid transparent;
+    }
+     h2 + p {
+        font-style: italic;
+    }
+	div.padding-medium.flex-item.tm-team-description-container.flex-item{
+		line-height: 2em;
+		text-indent: 1.5em;
+	}
+	.padding-medium ol li a{
+		color: black;
+	}
+	.padding-medium ol li a:visited{
+		text-decoration: underline;
+	}
+	.padding-medium ol li a:hover{
+		text-decoration-style: double;
+		color: lightblue;
+	}
+	.text:after{
+		content: "New";
+		color: red;
+		vertical-align: super;
+		font-size: 11px;
+	}
+	.box:nth-child(2n){
+	background: #d7d7d7;
+	}
+	.box.box-work{
+		padding: 10px;;
+	}
+	.box p:first-letter{
+		font-size: 22px;
+	}
+	.submit-btn{
+		float: right;
+		background-color: white;
+		color: skyblue;
+		border-radius: 0;
+		border-color: skyblue;
+		background: white;
+	}
+ 	.submit-btn:hover{
+ 		background-color: skyblue;
+		color: white;
+		font-weight: bold;
+		border-color: skyblue;
+ 	}
+ 	
+ 	.form-group-2-col-right:after{
+ 		 color: #d00;
+		 content: "*";
+		 position: absolute;
+		 margin-left: 8px;
+		 top:7px;
+ 	}
+ 	.tm-nav-item:hover{
+ 		background-color: lightgrey;
+ 	}
+	
