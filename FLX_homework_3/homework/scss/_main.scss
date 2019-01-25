@@ -1,0 +1,217 @@
+// Write your styles here
+main{
+	margin-left: 200px;
+	margin-right: 200px;
+	.toolbar {
+		font-size: $font-size;
+		text-align: right;
+		margin: 20px;
+		margin-right: 0;
+		input{
+			border: 1px solid $toolbarborder;
+			padding: 8px 15px;
+			background: $backgroundcol;
+		}
+}
+	
+	.post-list{
+		h1{
+		text-align: right;
+		font: normal 700 25px/24px $font1;
+		margin: 0;
+		color: $blogcol;
+		}
+	}
+}
+
+body{
+	background-color: $backgroundcol;
+	margin: auto;
+	header{
+		background-image: url($contentBackground);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 900px;
+		text-align: center;
+		h1, a{
+			color: $navcol;
+		}
+	}
+	footer{
+		color: $articleP;
+		position: relative;
+		top: 70px;
+		font: normal 500 12px/20px $font1;
+		margin-bottom: 10px;
+	}
+}
+
+.logo{
+	img{
+		width: 230px;
+		position: absolute;
+		top: 0%;
+		left: 0%
+	}
+}
+
+.top-wrapper + section{
+	color: white;
+	margin: 0;
+	position: relative;               
+	top: 40%;                        
+	font: normal 300 15px/24px $font1;
+
+}
+
+h1, h2, h3, a{
+	text-transform: uppercase;
+}
+
+
+nav{
+	text-align: right;
+	padding: 10px;
+	a{
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 20px 110px;
+		font: 600 15px/24px $font1;
+		color: white;
+		border-right: 2px solid #607d8b
+
+	}
+}
+
+.btn{
+	text-transform: uppercase;
+	color: $btntextcol;
+	border-radius: 0;
+	border: 1px solid $buttoncolor;
+	background: $buttoncolor;
+	font-weight: 200;
+	padding: .8em 3.5em;
+	text-decoration: none;
+
+		&:hover{
+	 		background-color: $btntextcol;
+			color: $buttoncolor;
+			font-weight: bold;
+			border-color: white;
+ 		}
+}
+
+article {
+	display: flex;
+	background: $backarticlecol;
+	padding: 10px;
+	margin-bottom: 20px;
+	.post div{
+		color: $timecol;
+		border-bottom: 1px solid $toolbarborder;
+		padding-bottom: 10px;
+		font: 200 11px/3px $font1
+	}
+	.post{
+		padding: 10px;
+
+	}
+	h3{
+		font: 700 19px/1px $font1;
+		color: $top-wrapperAcol;
+		padding: 0;
+	}
+	p{
+		font: normal 300 14px/24px $font1;
+		margin-top: 0;
+		color: $articleP;
+	}
+	.btn{
+		float: right;
+		padding: 0.8em 5em;
+	}
+	img{
+		transform: scale(0.99);
+	}
+	
+}
+
+.post-description + div{
+	margin: 5px;
+}
+
+.about{
+	padding-top: 20px;
+	img{
+		width: 100%
+	}
+	h1{
+		text-align: right;
+		font: 700 22px/1px $font1;
+		color: $blogcol;
+	}
+	p{
+		font: normal 300 14px/24px $font1;
+		margin: 0px 15px 15px 15px;
+		color: $articleP;
+	}
+
+}
+
+.contact-form{
+	padding-top: 20px;
+	h1{
+		color: $blogcol;
+		text-align: right;
+		margin: 0;
+		font: normal 700 22px/24px $font1;
+	}
+	h4{
+		color: $blogcol;
+		text-transform: uppercase;
+		font: normal 600 17px/24px $font1;
+		text-align: right;
+		margin: 0;
+	}
+}
+
+.formc{
+
+	margin-top: 20px;
+	position: relative;
+	text-align: left;
+	input, textarea{
+		padding: 12px 20px;
+		border: 1px solid $toolbarborder;
+		background: $backgroundcol;
+	}
+	#contact_name, #contact_email{
+		width: 425px;
+	}
+	#contact_name{
+		margin-right: 4px;
+	}
+	#contact_message{
+		width: 900px;
+	}
+	.formhead{
+		text-align: right;
+		font: normal 15px/24px $font1;
+		color: $top-wrapperAcol;
+	}
+}
+
+.col-2{
+	display: inline-block;
+	position: flex;
+	width: auto;
+	justify-content: space-between;
+}
+
+.submit-btn{
+	font: normal $font-size $font1;
+	margin-top: 20px;
+	float: right;
+	padding: 0.7em 6em;
+}
+
