@@ -132,30 +132,26 @@ article {
     text-align: right;
     margin: 0; }
 
-.formc {
-  margin-top: 20px;
-  position: relative;
-  text-align: left; }
-  .formc input, .formc textarea {
-    padding: 12px 20px;
-    border: 1px solid #607d8b;
-    background: #ffffff; }
-  .formc #contact_name, .formc #contact_email {
-    width: 425px; }
-  .formc #contact_name {
-    margin-right: 4px; }
-  .formc #contact_message {
-    width: 900px; }
-  .formc .formhead {
-    text-align: right;
-    font: normal 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-    color: #0097a7; }
+form input, form textarea {
+  padding: 18px 0px 0px 0px;
+  border: 1px solid #607d8b;
+  background: #ffffff; }
+form #contact_email {
+  margin-right: 0; }
+form #contact_message {
+  width: 100%; }
+form .formhead {
+  text-align: right;
+  font: normal 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  color: #0097a7; }
+form #margin {
+  float: right; }
 
 .col-2 {
-  display: inline-block;
-  position: flex;
-  width: auto;
-  justify-content: space-between; }
+  width: 49.6%;
+  display: inline-block; }
+  .col-2 .form-control {
+    width: 100%; }
 
 .submit-btn {
   font: normal 0.625 Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;

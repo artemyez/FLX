@@ -175,37 +175,37 @@ article {
 	}
 }
 
-.formc{
-
-	margin-top: 20px;
-	position: relative;
-	text-align: left;
+form{
 	input, textarea{
-		padding: 12px 20px;
+		padding: 18px 0px 0px 0px;
 		border: 1px solid $toolbarborder;
 		background: $backgroundcol;
 	}
-	#contact_name, #contact_email{
-		width: 425px;
-	}
-	#contact_name{
-		margin-right: 4px;
+	#contact_email{
+		margin-right: 0;
+
 	}
 	#contact_message{
-		width: 900px;
+		width: 100%;
 	}
-	.formhead{
+    .formhead{
 		text-align: right;
 		font: normal 15px/24px $font1;
 		color: $top-wrapperAcol;
 	}
+	#margin{
+		float: right;
+	}
+
 }
 
 .col-2{
+	width: 49.6%;
 	display: inline-block;
-	position: flex;
-	width: auto;
-	justify-content: space-between;
+	.form-control{
+		width: 100%;
+	}
+		
 }
 
 .submit-btn{
