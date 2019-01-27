@@ -151,7 +151,7 @@ nav .btn{
 
 .readsome p{
 	text-align: center;
-	padding: 20px;
+	padding: 2.5%;
 	margin-top: 0;
 }
 
@@ -212,9 +212,8 @@ nav .btn{
 }
 
 .explore-sec{
-	margin: 10px 30px
+	margin: 10px;
 }
-
 
 .explore{
 	display: flex;
@@ -225,8 +224,8 @@ nav .btn{
 
 .explore div{
 	box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.46);
-	margin: 0 7%;
-	padding: 20px;
+	margin: 0 7% 0.1% 6%;
+	padding: 1%;
 }
 
 .btn-ex{
@@ -273,12 +272,13 @@ input::placeholder{
 	justify-content: space-around;
 	align-items: center;
 	height: 350px;
+	overflow: auto;
 }
 
 .oneforthree{
+	margin-left: 30px;
 	font-size: 15px;
 	display: flex;
-	justify-content: space-between;
 	
 }
 
@@ -292,7 +292,6 @@ input::placeholder{
 }
 
 .newsemail input{
-	margin: 5px;
 	padding: 10px;
 	border: 1px solid #000000;
 	width: 120px;
@@ -302,13 +301,16 @@ input::placeholder{
 .newslater{
 	width: 400px;
 }
+.newslater p{
+	margin: 0;
+}
 
 .widthteweer{
-	width: 500px;
+	width: 35%;
 }
 
 .contact{
-	padding-left: 30px;
+	padding-left: 15px;
 	width: 180px;
 	font-size: 15px;
 }
