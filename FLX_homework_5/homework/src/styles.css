@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.post-1 {
+  background: #B71757;
+}
+.post-2 {
+  background: #0D7E71;
+}
+.post-3 {
+  background: #b1660e;
+}
+.post-4 {
+  background: #d12767;
+}
+.post-5 {
+  background: #2d95bb;
+}
+
+main{
+  width: 100%;
+  overflow: auto;
+}
+
+body{
+  font-family: roboto;
+  background-color: #0b192f;
+  margin: 0 14%;
+}
+
+header {
+  background-color: #162b4d;
+  height: 115px;
+  margin-bottom: 2%;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1{
+  font-weight: 200;
+  font-size: 2.4vw;
+  margin-left: 2%;
+}
+
+header nav{
+  margin-right: 5%;
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav a{
+  padding: 2.3vw 1vw;
+  font-size: 1.2vw;
+  color: #fff;
+  text-align: right;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+nav a:hover{ 
+  background-color: #283d5f;
+  filter: opacity(0.9) brightness(1.1);
+}
+
+aside{
+  width: 55%;
+}
+
+aside article{
+  margin-bottom: 5%;
+  background-color: white;
+}
+
+aside p{
+  padding: 0 13% 10% 13%;
+  color: grey;
+  line-height: 1.5;
+  font-weight: 200;
+  font-size: 0.9vw;
+}
+
+aside h2{
+  padding: 13% 15% 7% 13%;
+  font-weight: 300;
+  font-size: 1.6vw;
+}
+
+.headcol{
+  color: #B71757;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.blog img:hover{
+  filter: opacity(.5);
+}
+
+.blog {
+  cursor: pointer;
+  margin: 0 2% 2% 0;
+}
+
+.blog article{
+  display: flex;
+}
+
+.blog article:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.blog article:nth-child(even) .postext{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 4% 5% 0;
+}
+
+.blog article:nth-child(even) .postext h2{
+  margin-left: 2vw;
+}
+
+.blog article:nth-child(even) .datecode{
+  margin: 5% 3%;
+}
+
+.content{
+  width: inherit;
+  display: flex;
+}
+
+.postext{
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0 0 5% 4%;
+  color: #fff;
+}
+
+.postext:hover{
+  filter: opacity(.5);
+}
+
+.postext h2{
+  line-height: 1;
+  padding-top: 10%;
+  margin-bottom: 5%;
+  font-size: 3.1vw;
+  font-weight: 200;
+}
+
+.postext p{
+  font-size: 1vw;
+  font-weight: 200;
+  line-height: 1.5;
+  opacity: .6;
+}
+
+.imgbox{
+  width: 50%;
+}
+
+.datecode{
+  margin: 3% 5%;
+  font-weight: 200;
+  font-size: 1.6vw;
+  opacity: .3;
+}
+
+.bigdigits{
+  font-size: 3vw;
+}
+
+.bloglast{
+  background-color: #2d95bb;
+  width: 100%;
+}
+
+footer{
+  background-color: #162b4d;
+  padding: 0 3%;
+  height: 115px;
+  margin-bottom: 7px;
+  display: flex;
+  color: white;/*заменить*/
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+  font-weight: 200;
+  font-size: 1vw;
+  opacity: .3;
+}
+
+.author{
+  width: 15%;
+}
+
+@media screen and (max-width: 768px){
+  body{
+    margin: 0 1%;
+  }
+
+  header{
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  header h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.7vw;
+  }
+
+  header nav{
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  header nav:before {
+    content: '\2261';
+  }
+
+  header nav a{
+    display: none;
+  }
+
+  header nav:hover a{
+    display: block;
+    padding: .5vw 1vw;
+  }
+
+  aside {
+    width: 35%;
+  }
+
+  aside h2{
+    font-size: 3vw;
+    padding: 5% 8% 3% 5%;
+  }
+
+  aside p{
+    font-size: 1.6vw;
+    padding: 0 8% 5% 5%;
+  }
+
+  .blog {
+    width: 65%;
+  }
+
+  .blog article{
+    display: block;
+    width: 100%;
+  }
+
+  .blog article p{
+    padding: 0;
+    font-size: 2.5vw;
+  }
+
+  .blog article h2, article:nth-child(even) .postext h2{
+    font-size: 6vw;
+    padding: 0;
+    padding-right: 15%;
+
+  }
+  
+  .blog article:nth-child(even) .postext{
+    display: block;
+    padding: 5%;
+  }
+
+  .blog article:nth-child(even) {
+    text-align: left;
+  }
+
+  .postext{
+    padding: 5%;
+    height: 55vw;
+    display: block;
+    width: 100%;
+  }
+
+  .datecode{
+    text-align: center;
+    position: relative;
+    bottom: -6vw;
+    font-size: 3vw;
+  }
+
+  .bigdigits{
+    display: block;
+    font-size: 7vw;
+  }
+
+  .imgbox {
+     width: 100%; 
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+  }
+
+  .copyright, .author{
+    text-align: center;
+  }
+
+  .author{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  header{
+    padding: 8%;
+  }
+
+  header nav{
+    font-size: 6vw;
+  }
+
+  header nav a{
+    font-size: 4vw;
+  }
+
+  header h1{
+    font-size: 10vw;
+  }
+
+  aside h2{
+    padding: 3% 2% 0 5%;
+    font-size: 6vw;
+  }
+
+  aside p{
+    padding: 1% 6% 5% 5%;
+    font-size: 3vw;
+  }
+
+  .content{
+    display: block;
+    width: 100%;
+  }
+
+  .postext{
+    padding: 7%;
+    height: 100vw;
+  }
+
+  .blog article h2, article:nth-child(even) .postext h2{
+    font-size: 11vw;
+    padding-right: 12%;
+  }
+
+  .blog article p{
+    font-size: 4vw;
+  }
+
+  .datecode {
+    bottom: -20vw;
+    font-size: 6vw;
+  }
+
+  .bigdigits{
+    font-size: 10vw;
+  }
+  
+  .blog, aside{
+    width: 100%;
+  }
+
+  footer{
+    height: 80px;
+    padding: 5%;
+    font-size: 3vw;
+    text-align: center;
+  }
+}
