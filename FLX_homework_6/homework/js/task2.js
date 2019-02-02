@@ -1,5 +1,5 @@
 function datacheck(num){
-	if ((isNaN(num) ? 0 : 1) && num.length !== 0 && 0 <= num <= 9999999 && num > 0){
+	if ((isNaN(num) ? 0 : 1) && num.length !== 0 && num <= 9999999 && num > 0){
 		return num;
 	}else{
 		alert('Invalid input data');
