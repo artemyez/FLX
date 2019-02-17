@@ -47,8 +47,6 @@ function userCard(index){
 				operationTime: time
 			});
 		}
-			
-		
 	}
 }
 
