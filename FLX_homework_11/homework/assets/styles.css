@@ -1,0 +1,66 @@
+/* Your styles goes here */
+* {
+    padding: 0;
+    margin: 0
+}
+
+body{
+	display: flex;
+	justify-content: center;
+}
+
+.mainwrapper{
+	border: 1px solid black;
+	width: 500px;
+	padding: 20px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+header h1{
+	font-weight: 100;
+	margin: 10px 10px 20px 10px;
+}
+.addnewlinewrap{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.addnewlinewrap input{
+width: 90%
+}
+.addnewlinewrap button, .listyle button{
+	border: 0;
+    background: white;
+    padding: 0;
+}
+
+
+.todolist{
+	border-top: 2px solid black;
+	height: 300px;
+	padding-right: 5px;
+}
+.listyle{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	text-align: left;
+	margin: 4px 0px;
+
+}
+
+.delete_item{
+	margin-left: auto;
+}
+
+footer img{
+	width: 50px;
+    height: 50px;
+}
+
+input{
+	box-sizing: border-box;
+	height: 24px;
+}
