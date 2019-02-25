@@ -1,10 +1,6 @@
 const rootNode = document.getElementById('root');
+create_skeleton()
 
-//const todoItems = [
-//    {isDone: false, id: 12345, description: 'Todo 1'}
-//];
-
-// Your code goes here
 let j = 0;
 const todoItems = [];
 function modify_isDone(id){
@@ -211,7 +207,89 @@ let what_to_show = function(){
 
 window.onhashchange = what_to_show
  
+function create_skeleton(){
+	const main_page = document.createElement('div');
+	main_page.className = 'main_page';
+	const h1 = document.createElement('h1');
+	let texth1 = document.createTextNode('Simple TODO application');
+	const todolist = document.createElement('div');
+	todolist.className = 'todolist';
+	const btn_main = document.createElement('button');
+	btn_main.className = 'add_task';
+	let btn_t_main = document.createTextNode('Add new task');
+	const empty_list = document.createElement('p');
+	empty_list.className = 'empty_list';
+	let empty_list_text = document.createTextNode('TODO is empty');
+	const listitems = document.createElement('ul');
+	listitems.id = 'listitems';
+
+	rootNode.appendChild(main_page);
+	main_page.appendChild(h1);
+	h1.appendChild(texth1);
+	main_page.appendChild(todolist);
+	todolist.appendChild(btn_main);
+	btn_main.appendChild(btn_t_main);
+	todolist.appendChild(empty_list);
+	empty_list.appendChild(empty_list_text);
+	todolist.appendChild(listitems);
+
+	const add_item = document.createElement('div');
+	add_item.className = 'add_item';
+	add_item.hidden = true;
+	const h2_ai = document.createElement('h2');
+	let texth2_ai = document.createTextNode('Add task');
+	const input_1 = document.createElement('input');
+	input_1.type = 'text';
+	input_1.name = 'addnewline';
+	const btns = document.createElement('div');
+	btns.className = 'btns';
+	const btn_canc = document.createElement('button');
+	btn_canc.className = 'btn_canc';
+	let btn_canc_text = document.createTextNode('Cancel');
+	const btn_save = document.createElement('button');
+	btn_save.className = 'btn_save';
+	let btn_save_text = document.createTextNode('Save changes');
+
+	rootNode.appendChild(add_item);
+	add_item.appendChild(h2_ai);
+	h2_ai.appendChild(texth2_ai);
+	add_item.appendChild(input_1);
+	add_item.appendChild(btns);
+	btns.appendChild(btn_canc);
+	btn_canc.appendChild(btn_canc_text);
+	btns.appendChild(btn_save);
+	btn_save.appendChild(btn_save_text);
+
+	const modify = document.createElement('div');
+	modify.className = 'modify';
+	modify.hidden = true;
+	const h2_m = document.createElement('h2');
+	let texth2_m = document.createTextNode('Modify item');
+	const input_2 = document.createElement('input');
+	input_2.type = 'text';
+	input_2.name = 'change_line';
+	const input_hid = document.createElement('input');
+	input_hid.type = 'hidden';
+	input_hid.name = 'hidden_id';
+	input_hid.id = 'hidden_id_field';
+	const btns_2 = document.createElement('div');
+	btns_2.className = 'btns';
+	const btn_canc_2 = document.createElement('button');
+	btn_canc_2.className = 'btn_canc_m';
+	let btn_canc2_text = document.createTextNode('Cancel');
+	const btn_save_2 = document.createElement('button');
+	btn_save_2.className = 'btn_save_changes';
+	let btn_save2_text = document.createTextNode('Save changes');
 
 
-
-//rootNode.appendChild(/* Append your list item node*/);
+	rootNode.appendChild(modify);
+	modify.appendChild(h2_m);
+	h2_m.appendChild(texth2_m);
+	modify.appendChild(input_2);
+	modify.appendChild(input_hid);
+	modify.appendChild(btns_2);
+	btns_2.appendChild(btn_canc_2);
+	btn_canc_2.appendChild(btn_canc2_text);
+	btns_2.appendChild(btn_save_2);
+	btn_save_2.appendChild(btn_save2_text);
+}
