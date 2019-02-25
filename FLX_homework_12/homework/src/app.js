@@ -176,12 +176,21 @@ function add_item_fun(){
 	add_todo_item(input_field.value);
 }
 
+function sort_by_tf(a,b) {
+	if (a.isDone < b.isDone)
+		return -1;
+	if (a.isDone > b.isDone)
+ 		return 1;
+return 0;
+}
+
 function render_list(){
 	while (listitems.firstChild) {
     listitems.removeChild(listitems.firstChild);
 	}
 	todoItems.forEach(function(val){
 		create_li(val)
+		todoItems.sort(sort_by_tf)
 	})
 }
 
