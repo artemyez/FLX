@@ -177,11 +177,16 @@ function add_item_fun(){
 }
 
 function sort_by_tf(a,b) {
-	if (a.isDone < b.isDone)
-		return -1;
-	if (a.isDone > b.isDone)
- 		return 1;
-return 0;
+	let i = -1
+	let j = 1
+	let y = 0
+	if (a.isDone < b.isDone){
+		return i;
+	}
+	if (a.isDone > b.isDone){
+		return j;
+	}
+return y;
 }
 
 function render_list(){
